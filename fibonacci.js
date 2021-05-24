@@ -1,12 +1,9 @@
 //gets the fibonacci number based on num, with memoization for optimization purposes
-function fibonacci(num, memo) {
-    memo = memo || {}
-  
-    if (memo[num]) return memo[num]
+function fibonacci(num) {
     if(num == 0) return 0
     if (num <= 1) return 1
   
-    return memo[num] = fibonacci(num - 1, memo) + fibonacci(num - 2, memo)
+    return fibonacci(num - 1) + fibonacci(num - 2)
 }
 
 $(function() {

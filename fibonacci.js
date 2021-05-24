@@ -1,3 +1,4 @@
+//gets the fibonacci number based on num, with memoization for optimization purposes
 function fibonacci(num, memo) {
     memo = memo || {}
   

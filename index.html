@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="fibonacci.js"></script>
+</head>
+<body class="m-0 p-0">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Fibonacci Numbers Generator</h1>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-2 offset-5">
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="max_number" class="form-label">Max Count</label>
+                            <input type="number" name="max_number" class="form-control" id="max_number" aria-describedby="wordHelp">
+                        </div>
+                        <button type="submit" id="submit_btn" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-4 offset-4">
+            <div class="alert alert-primary" role="alert" style="white-space: break-spaces;"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
